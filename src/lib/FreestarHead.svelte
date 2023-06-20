@@ -3,7 +3,9 @@
     Head code component to handle the definition of Freestar and its config.
     The ad unit path (channel) is defined here as well as any page level targeting
     */
-    export let channel, pageTargeting;
+    export let freestarData;
+    let channel = freestarData.channel,
+        pageTargeting = freestarData.pageTargeting;
     window.freestar = window.freestar || {};
     window.freestar.queue = window.freestar.queue || [];
     window.freestar.config = window.freestar.config || {};

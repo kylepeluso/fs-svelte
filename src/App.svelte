@@ -25,7 +25,7 @@
 
     <FreestarScript />
 
-    <FreestarHead channel={freestarData.channel} pageTargeting={freestarData.pageTargeting} />
+    <FreestarHead freestarData={freestarData} />
 
     <FreestarTrigger bind:adQueue={freestarData.adQueue} />
 
@@ -33,6 +33,9 @@
         bind:adQueue={freestarData.adQueue} />
 
     <AdSlot placementName='reuters_desktop_right_rail_1' slotId='ad2' bind:adQueue={freestarData.adQueue} />
+
+    <AdSlot placementName='reuters_desktop_native_1' slotId='reuters_desktop_native_1'
+        bind:adQueue={freestarData.adQueue} />
 </main>
 
 <style>
