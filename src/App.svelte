@@ -38,7 +38,7 @@
   <AdSlot
     placementName="reuters_mobile_leaderboard"
     bind:adQueue={freestarData.adQueue}
-    targeting={{ asdcasd: "bigtime" }}
+    targeting={{ type: "leaderboard", key3: ["multivalue3", "multivalue4"] }}
   />
 
   {@html "<!--this ad will only load on desktop viewports-->"}
@@ -46,7 +46,7 @@
     placementName="reuters_desktop_right_rail_1"
     slotId="ad2"
     bind:adQueue={freestarData.adQueue}
-    targeting={{ pdfivc: "smalltime" }}
+    targeting={{ type: "rightrail" }}
   />
 
   {@html "<!--this ad will only load on desktop viewports-->"}

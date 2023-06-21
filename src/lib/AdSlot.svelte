@@ -13,7 +13,6 @@
     targeting = targeting || {};
     slotId = slotId || placementName;
   });
-  console.log(targeting.type);
   const placementCode =
     Object.keys(targeting).length > 0
       ? {
@@ -25,7 +24,6 @@
           placementName: placementName,
           slotId: slotId,
         };
-  console.log(placementCode);
   adQueue.push(placementCode);
 </script>
 
